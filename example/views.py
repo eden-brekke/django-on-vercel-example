@@ -2,8 +2,8 @@ from datetime import datetime
 from django.http import HttpResponse
 
 def index(request):
-  now = datetime.now()
-  html = f'''
+    now = datetime.now()
+    html = f'''
     <html>
         <body>
             <h1>Hello from Vercel!</h1>
@@ -11,4 +11,4 @@ def index(request):
         </body>
     </html>
     '''
-  return HttpResponse(html)
+    return HttpResponse(html)
